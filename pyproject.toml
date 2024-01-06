@@ -9,3 +9,6 @@ dependencies = []
 
 [project.scripts]
 fib = "fib:main"
+
+[tool.isort]
+profile = "black"

@@ -1,0 +1,15 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    dist,
+    build,
+    .venv
+
+per-file-ignores =
+    # imported but unused
+    __init__.py: F401
+
+# to work with black
+max-line-length = 88
+extend-ignore = E203

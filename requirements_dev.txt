@@ -1,0 +1,6 @@
+setuptools
+pytest
+build
+flake8
+black
+isort

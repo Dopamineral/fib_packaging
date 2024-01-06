@@ -1,5 +1,0 @@
-build==1.0.3
--e git+ssh://git@github.com/Dopamineral/fib_packaging.git@51d8d3709bf1aea1536f2fe0aa193f46099ff804#egg=fib
-packaging==23.2
-pyproject_hooks==1.0.0
-tomli==2.0.1
