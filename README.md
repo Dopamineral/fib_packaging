@@ -190,3 +190,54 @@ touch .github/workflows/run_tests.yml
 
 Check out the file for more information on how it works.
 
+## 12. Working with environment variables
+
+Make sure to not accidentally leak credentials online
+```yaml
+# .gitignore
+*.ini
+```
+
+
+Save configurations in config.ini files
+```sh
+touch config.ini
+```
+
+```toml
+#config.ini
+[credentials]
+Username=yourusername
+Password=yourpassword
+
+```
+
+Access them with configparser
+
+```py
+import configparser
+
+# load credentials
+config = configparser.ConfigParser()
+config.read("config.ini")
+
+# use credentials here
+credentials = config["credentials"]
+
+print(credentials["username"])
+print(credentials["password"])
+
+```
+
+## 13. Adding security screening to your project.
+
+```sh
+pip install bandit
+```
+
+```sh
+
+bandit -r fib/
+bandit -r tests/
+
+```
