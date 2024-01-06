@@ -179,3 +179,14 @@ mkdocs gh-deploy
 ```
 
 ## 11. Set up CI/CD in github
+
+Add ci logic to .github folder
+
+```sh
+
+touch .github/workflows/run_tests.yml
+
+```
+
+Check out the file for more information on how it works.
+
