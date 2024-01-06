@@ -4,9 +4,15 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "fib/**"
+      - "tests/**"
   pull_request:
     branches:
       - master
+    paths:
+      - "fib/**"
+      - "tests/**"
 
 jobs:
   test:
