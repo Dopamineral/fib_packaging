@@ -23,7 +23,8 @@ fib
 ```sh
 touch README.md # docs here
 touch LICENSE # license here
-touch pyproject.toml\
+touch pyproject.toml
+touch .flake8
 touch requirements_dev.txt # dev requirements here
 ```
 
@@ -93,11 +94,6 @@ $ fib 10
 ```
 
 ## 8. Code quality and uniformity (linting): flake8, black, isort
-```sh
-
-touch .flake8
-
-```
 
 ```toml
 # .flake8
@@ -122,4 +118,33 @@ isort testst/
 # check if linting errors still remain
 flake8
 ```
+## 9. Build release files 
+
+```sh
+# in root directory
+
+python -m build
+```
+
+This will create files for distribution
+
+```sh
+dist
+├── fib-0.1-py3-none-any.whl
+└── fib-0.1.tar.gz
+```
+
+Which can be shared through releases.
+
+### Installing release files
+
+Not to be confused, you still need python to run and install the releases, these are not like binary files that can be executed standalone.
+
+```sh
+
+pip install fib-0.1-py3-none-any.whl
+
+```
+
+
 
