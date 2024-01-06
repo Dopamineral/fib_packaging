@@ -178,3 +178,4 @@ mkdocs build
 mkdocs gh-deploy
 ```
 
+## 11. Set up CI/CD in github
