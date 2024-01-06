@@ -146,5 +146,35 @@ pip install fib-0.1-py3-none-any.whl
 
 ```
 
+## 10. Add online docs to your project.
 
+### Adding mkdocs
+```sh
+pip install mkdocs
+mkdocs new . # to start in the current folder
+
+mkdocs serve # to see the docs in local browser
+```
+
+Add some basic configuration to the docs site
+```yml
+site_name: Fib
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
+```
+
+
+### Building the site
+
+```sh
+mkdocs build
+```
+
+### Deploy docs to github
+
+```sh
+mkdocs gh-deploy
+```
 

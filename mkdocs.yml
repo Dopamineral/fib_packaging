@@ -1,0 +1,5 @@
+site_name: Fib
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
